@@ -109,7 +109,7 @@ body {
 
 .wind-dir {
     font-size: 16px;
-    margin-left: 20px;
+    margin-left: 5px;
 }
 
 .feels-like {
@@ -120,4 +120,20 @@ body {
 .hi-lo {
     font-size: 20px;
     margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .wind {
+        font-size: 18px;
+    }
+
+    .wind-dir {
+        font-size: 14;
+    }
+
+    .details .col {
+        padding: 5px;
+        margin: 5px 0;
+    }
 }
