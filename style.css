@@ -93,7 +93,6 @@ body {
 .wind {
     font-size: 28px;
     margin-top: -6px;
-    display: block;
 }
 
 .weather {
@@ -120,4 +119,24 @@ body {
 .hi-lo {
     font-size: 20px;
     margin-top: 20px;
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col {
+        margin-bottom: 10px;
+    }
+
+    /* Assuming the humidity is the first child and wind speed is the second child */
+    .details .col:first-child {
+        order: 2; /* Place it after the wind speed */
+    }
+
+    .details .col:nth-child(2) {
+        order: 1; /* Place wind speed first */
+    }
 }
